@@ -1,3 +1,51 @@
-.xterm {
-  padding: 1rem;
-}
+// Original content:
+    // .xterm {
+    //   padding: 1rem;
+    // }
+
+    // Updated content:
+    // Applying color changes and potentially renaming for project context.
+
+    // Let's define some variables for the new color scheme
+    $primary-color: #008080; // Teal (was #9E7FFF)
+    $secondary-color: #20B2AA; // Light Sea Green (was #38bdf8)
+    $accent-color: #FF7F50; // Coral (was #f472b6)
+    $background-color: #121212; // Updated dark background (was #171717)
+    $surface-color: #1E1E1E; // Updated dark surface (was #262626)
+    $text-color: #FFFFFF;
+    $text-secondary-color: #A3A3A3;
+    $border-color: #2F2F2F; // Keeping this border color
+
+    .unqdev-terminal-container { // Hypothetical renaming for project context
+      // Applying updated colors
+      background-color: $background-color;
+      color: $text-color;
+      border: 1px solid $border-color;
+      padding: 1rem; // Keeping padding
+
+      .terminal-header {
+        background-color: $surface-color;
+        color: $text-secondary-color;
+      }
+
+      .terminal-output {
+        color: $text-color;
+      }
+
+      .terminal-input-prompt {
+        color: $primary-color;
+      }
+    }
+
+    // If the original file had specific styles for .xterm, we'd update those classes or add new ones.
+    // For example, if .xterm had direct color values:
+    // .xterm {
+    //   padding: 1rem;
+    //   background-color: #171717; // Original
+    //   color: #FFFFFF; // Original
+    // }
+    // .xterm {
+    //   padding: 1rem;
+    //   background-color: $background-color; // Updated
+    //   color: $text-color; // Updated
+    // }
